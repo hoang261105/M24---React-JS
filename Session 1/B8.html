@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function insertArr(arr1, arr2, position){
+            const result = [...arr1];
+            result.splice(position, 0, ...arr2);
+            return result;
+        }
+
+        const arr1 = [1, 2, "a", 6, 7];
+        const arr2 = ["b", "hai"];
+        const position = 2;
+
+        const mergedArray = insertArr(arr1, arr2, position);
+        console.log(mergedArray);
+    </script>
+</body>
+</html>

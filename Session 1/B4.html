@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let bookList = [
+            {
+                id: 1,
+                name: "Truyện Kiều",
+            },
+            {
+                id: 2,
+                name: "Làng",
+            },
+            {
+                id: 3,
+                name: "Nhàn",
+            },
+        ]
+        let result = bookList.find((item, index, arr) => {
+            return item.id === 4;
+        });
+        if(result){
+            console.log(result);
+        }else{
+            console.log("Không tìm thấy");
+        }
+        
+    </script>
+</body>
+</html>

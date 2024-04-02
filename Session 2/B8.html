@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function isPrime(num){
+            if(num <= 1){
+                return false;
+            }
+
+            for(let i=2; i<Math.sqrt(num);i++){
+                if(num % i == 0){
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        function hasPrimeNumber(arr){
+            return arr.every(isPrime);
+        }
+
+        const arr1 = hasPrimeNumber([3, 8, 7, 11]);
+        console.log(arr1);
+    </script>
+</body>
+</html>
