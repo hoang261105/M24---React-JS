@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function insertArr(arr1, arr2, position){
+            if(position < arr1.length){
+                const result = [...arr1];
+                result.splice(position, 0, ...arr2);
+                return result;
+            }else{
+                console.log("Không hợp lệ");
+            }
+            
+        }
+
+        const arr1 = [1, 2, 3, 7 ,8];
+        const arr2 = [4, 5 ,6];
+        const position = 7;
+
+        let result = insertArr(arr1, arr2, position);
+        console.log(result);
+    </script>
+</body>
+</html>
