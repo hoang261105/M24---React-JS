@@ -1,0 +1,12 @@
+.title {
+    width: 1300px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.search {
+    display: flex;
+    justify-content: space-between;
+}

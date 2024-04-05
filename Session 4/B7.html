@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        const phoneBooks = [];
+        function addContact(name, phone, email){
+            let contact = {name, phone, email};
+            phoneBooks.push(contact);
+        }
+
+        function displayContact(){
+            for(let i=0; i<phoneBooks.length; i++){
+                console.log("Name: ", phoneBooks[i].name);
+                console.log("Phone: ", phoneBooks[i].phone);
+                console.log("Email: ", phoneBooks[i].email);
+                console.log("------------------------------");
+            }
+        }
+
+        addContact("Huyền", "0324353562", "huyen2005@gmail.com");
+        addContact("Hoàng", "0903599038", "huyhoangcs2611@gmail.com");
+        displayContact();
+    </script>
+</body>
+</html>
